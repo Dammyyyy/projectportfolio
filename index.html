@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+			integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							pink: {
+								100: "#490149",
+								// 200: '#a5f3fc',
+								// 300: '#67e8f9',
+								// 400: '#22d3ee',
+								// 500: '#06b6d4',
+								// 600: '#0891b2',
+								// 700: '#0e7490',
+								// 800: '#155e75',
+								// 900: '#164e63',
+							},
+							fuchsia: "#ff00c8",
+							grey: "rgb(141, 141, 141)",
+						},
+					},
+				},
+			};
+			/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<header class="">
+			<nav class="p-5">
+				<div class="brand"> EZE OLUWADAMILOLA</div>
+				<div class="topnav" id="myTopnav">
+					<ul>
+						<li><a href="#home" class="active">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Works</a></li>
+						<li><a href="#contact">Contacts</a></li>
+					</ul>
+					<div class="dropdown">
+						<button class="dropbtn">
+							Menu
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<!-- <a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a> -->
+							<a href="#home" class="active">Home</a>
+							<a href="#about">About</a>
+							<a href="#projects">Works</a>
+							<a href="#contact">Contact</a>
+						</div>
+					</div>
+					<!-- <a href="#home" class="active">Home</a>
+					<a href="#about">About</a>
+					<a href="#projects">works</a>
+					<a href="#contact">Contact</a> -->
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()"
+						>&#9776;</a
+					>
+				</div>
+			</nav>
+			<!-- <nav class="">
+				<div id="brand">
+					<h1>Porfolio</h1>
+				</div>
+				<ul class="flex space-x-5">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Works</a></li>
+					<li><a href="#contacts">Contact</a></li>
+				</ul>
+			</nav> -->
+			<div
+				class="text-white space-y-2 grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center place-content-center"
+				id="text-box-head"
+			>
+				<div class="space-y-2 md:col-span-2">
+					<h1 class="text-base uppercase" id="hello">&#8212; HELLO THERE</h1>
+					<h1 class="text-3xl md:text-5xl">I am eze damilola</h1>
+					<h1 class="text-3xl md:text-5xl">I am a frontend web Developer</h1>
+				</div>
+				<div class="space-y-2 justify-self-start md:col-span-1 mx-10 md:mx-5">
+					<a href="#projects" class="block">
+						<button
+							class="uppercase font-semibold text-sm py-3 px-5 border-solid border-2 border-white hover:bg-fuchsia hover:text-white hover:border-fuchsia active:bg-fuchsia active:ring focus:outline-none focus:ring focus:ring-pink-100"
+						>
+							projects
+						</button>
+					</a>
+					<a href="#projects" class="block"></a>
+						<button
+							class="uppercase font-semibold text-sm py-3 px-5 border-solid border-2 border-white hover:bg-fuchsia hover:text-white hover:border-fuchsia active:bg-fuchsia active:ring focus:outline-none focus:ring focus:ring-pink-100"
+						>
+							about me
+						</button>
+                        
+					</a>
+				</div>
+				<!-- <p class="justify-self-end align-">scroll down</p> -->
+			</div>
+		</header>
+
+		<main>
+			<section id="about" class="md:grid space-y-8 p-5 md:py-8 md:my-5">
+				<div class="md:justify-self-center text-center space-y-5">
+					<h6 class="text-lg md:text-2xl uppercase text-fuchsia font-semibold">
+						about
+					</h6>
+					<h1 class="text-4xl capitalize md:text-6xl">personal info</h1>
+					<p class="text-base font-semibold">Get to know me</p>
+					<hr />
+				</div>
+				<div
+					class="space-y-5 md:space-y-0 md:grid md:grid-cols-3 md:justify-items-center md:place-content-center"
+				>
+					<div class="space-y-2 md:w-2/3 md:justify-self-end md:col-span-2">
+						<h1 class="md:mt-8 text-xl font-semibold uppercase">Hello!</h1>
+						<p class="md:w-2/3">
+							My name is eze damilola and I am a passionate Frontend Web
+							Developer using web technologies to build different products and
+							solving problems for different niches and different
+							industries, using the power of technology.
+						</p>
+						
+					</div>
+					<div class="md:w-1/2 md:justify-self-start md:col-span-1 space-y-2">
+						<h1 class="md:mt-8 text-xl font-semibold uppercase">Skills</h1>
+						<div id="span-div" class="w-full">
+							<p class="inline-block">HTML</p>
+							<p class="inline-block">CSS</p>
+							<p class="inline-block">BOOTSTRAP</p>
+							
+
+				</div>
+			</section>
+			<section id="projects" class="bg-grey py-8">
+				<h6 class="text-center uppercase text-fuchsia font-semibold text-lg mb-2">works</h6>
+				<h1 class="text-center text-4xl capitalize md:text-6xl mb-2">
+					latest projects
+				</h1>
+				<p class="text-center mt-3 mb-8 text-base font-semibold">
+					Here are some of the projects that I have worked on
+					recently
+				</p>
+				<div
+					class="grid md:grid-cols-2 justify-items-center w-full space-y-5 md:space-y-0 md:gap-10"
+				>
+					<div class="w-80 text-center bg-white px-3 pb-3 md:justify-self-end">
+						<div>
+							<img class="w-full" src="./Images/CC Mockup.png" alt="" />
+						</div>
+
+						<h4 class="font-semibold text-xl">pizza ordering website</h4>
+						<p class="my-3 px-1">
+							A website that makes pizza ordering more easier.
+						</p>
+						<a href="https://ezeoluwadamilolaa.netlify.app/">
+							<button
+								class="bg-fuchsia text-white w-full border-solid border-3 border-fuchsia my-3 py-2"
+							>
+								VIEW LIVE
+							</button>
+						</a>
+					</div>
+					<div
+						class="w-80 text-center bg-white px-3 pb-3 md:justify-self-start"
+					>
+						<div>
+							<img class="w-full" src="./Images/eduford-mockup.png" alt="" />
+						</div>
+
+						<h4 class="font-semibold text-xl">nigerian foods</h4>
+						<p class="my-3 px-1">
+							The landing page of a nigerian restaurant website that shows everything they have and the prices for each items
+						</p>
+						<a href="https://ezedamilola1.netlify.app/">
+							<button
+								class="bg-fuchsia text-white w-full border-solid border-3 border-fuchsia my-3 py-2"
+							>
+								VIEW LIVE
+							</button>
+						</a>
+					</div>
+					<div class="w-80 text-center bg-white px-3 pb-3 md:justify-self-end">
+						<div>
+							<img class="w-full" src="./Images/publish-mockup.png" alt="" />
+						</div>
+
+						<h4 class="font-semibold text-xl">coffe marketing and blog.</h4>
+						<p class="my-3 px-1">
+							website for cafe and where they add links of their publish blog so their consumers have access to it before anyone else.
+						</p>
+						<a href="https://drinkyourcoffee.netlify.app/">
+							<button
+								class="bg-fuchsia text-white w-full border-solid border-3 border-fuchsia my-3 py-2"
+							>
+								VIEW LIVE
+							</button>
+						</a>
+					</div>
+					<div
+						class="w-80 text-center bg-white px-3 pb-3 md:justify-self-start"
+					>
+						<div>
+							<img class="w-full" src="./Images/portfolio-mockup.png" alt="" />
+						</div>
+
+						<h4 class="font-semibold text-xl">My Portfolio</h4>
+						<p class="my-3 px-1">
+							The Portfolio of eze damilola, a frontend developer. It contains some of her projects and helps you in contacting her.
+						</p>
+						<a href="https://tamara-portfolio.netlify.app/"> dont forget to add this one
+							<button
+								class="bg-fuchsia text-white w-full border-solid border-3 border-fuchsia my-3 py-2"
+							>
+								VIEW LIVE
+							</button>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="text-white bg-black p-5">
+			<div>
+				<h4 class="text-center uppercase text-fuchsia font-semibold">
+					contact me
+				</h4>
+	
+					</div>
+					<div id="contacts" class="md:justify-self-center">
+						<div class="mb-4">
+							<h4 class="text-xl font-semibold">Phone</h4>
+							<p>08166582846</p>
+						</div>
+						<div class="mb-4">
+							<h4 class="text-xl font-semibold">Email</h4>
+							<p>dlola261@gmail.com</p>
+						</div>
+						<div class="mb-4">
+							<h4 class="text-xl font-semibold">Address</h4>
+							<p>Lagos, Nigeria</p>
+						</div>
+						<div class="space-x-4 mt-10">
+							
+							<a
+								href="https://www.linkedin.com/in/eze-damilola-14b9991a4"
+							>
+								<i
+									class="fa-brands fa-linkedin hover:text-fuchsia text-2xl"
+								></i>
+							</a>
+							<a href="https://github.com/Dammyyyy">
+								<i class="fa-brands fa-github hover:text-fuchsia text-2xl"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
