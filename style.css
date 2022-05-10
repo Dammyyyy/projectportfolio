@@ -139,6 +139,7 @@ nav ul li{
       display: flex;
       justify-content: flex-end;
     }
+    .header.responsive {position: relative;} 
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
