@@ -43,7 +43,7 @@ nav ul li{
 }
 /* Add a black background color to the top navigation */
 .topnav {
-    
+    color: black;
     overflow: hidden;
   }
   
